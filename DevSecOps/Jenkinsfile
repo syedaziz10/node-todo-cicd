@@ -56,7 +56,7 @@ pipeline {
         stage("Deploy"){
             steps{
                 sh "docker compose down && docker compose up -d"
-                echo "App Deployed Successfully"
+                echo "App Deployed Successfully on Docker "
             }
         }
     }
