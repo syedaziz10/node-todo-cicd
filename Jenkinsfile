@@ -9,15 +9,15 @@ pipeline {
                 echo 'code clone complete'
             }
         }
+        stage("scan image"){
+            steps{
+                echo 'image scanning finished'
+            }
+        }
         stage("build and test"){
             steps{
                 sh "docker build -t node-app-test-new ."
                 echo 'code build completed'
-            }
-        }
-        stage("scan image"){
-            steps{
-                echo 'image scanning finished'
             }
         }
         stage("push"){
