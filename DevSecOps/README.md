@@ -10,7 +10,7 @@
 -  Jenkins CI/CD
 -  SonarQube
 -  OWASP
--  Trivy for ubuntu or redhat
+-  Trivy 
 
 #
 
